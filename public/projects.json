@@ -1,0 +1,27 @@
+[
+  {
+    "name": "EasyLink KSA Website",
+    "description": "A full-stack marketing website for EasyLink, providing digital transformation, cybersecurity, and cloud services solutions in Saudi Arabia.",
+    "live": "https://www.easylink-ksa.com/"
+  },
+  {
+    "name": "Df3a",
+    "description": "A full-stack web application that connects students with mentors through real-time chat, session booking, and interactive workshops.",
+    "live": "https://df3a.vercel.app/"
+  },
+  {
+    "name": "Together",
+    "description": "A social media web application allowing users to connect, share posts, and interact in real-time with a clean and modern interface.",
+    "live": "https://together-tau.vercel.app/"
+  },
+  {
+    "name": "Car Rental",
+    "description": "A responsive and user-friendly car rental system built with full CRUD functionality, allowing users to browse, book, and manage rentals easily.",
+    "live": "https://car-rental-nu-jet.vercel.app/"
+  },
+  {
+    "name": "To-Do App",
+    "description": "An elegant and minimalistic to-do list app that helps users organize their daily tasks efficiently.",
+    "live": "https://to-do-app-mu-mocha.vercel.app/"
+  }
+]

@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ✅ تخصيص الثيم مباشرة داخل CSS */
+@theme {
+  --color-primary: #2b8cee;
+  --color-background-dark: #101922;
+  --color-text-light: #f6f7f8;
+  --color-text-muted: #9dabb9;
+  --color-card-dark: #1a232c;
+  --color-border-dark: rgba(255, 255, 255, 0.1);
+  --font-display: "Space Grotesk", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ==== GLOBAL STYLES ==== */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background-dark);
+  color: var(--color-text-light);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==== HEADINGS ==== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: white;
+}
+
+/* ==== LINKS ==== */
+a {
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--color-primary);
+}
+
+/* ==== INPUTS ==== */
+input,
+textarea {
+  border: 1px solid var(--color-border-dark);
+  background: var(--color-background-dark);
+  color: white;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #7a7a7a;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+/* ==== SCROLLBAR ==== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background-dark);
 }
