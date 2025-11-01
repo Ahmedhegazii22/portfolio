@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Developer Portfolio - Dark Theme",
+  title: "Abdurahman Rabie - Portfolio",
   description: "Portfolio built with Next.js and Tailwind CSS",
 };
 
